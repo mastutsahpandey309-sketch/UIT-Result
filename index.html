@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>B.Tech Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <h2>UNIVERSITY INSTITUTE OF TECHNOLOGY, RGPV</h2>
+</div>
+
+<div class="container">
+    <div id="notification"></div>
+
+    <h2>B.TECH RESULT</h2>
+
+    <label>Enter Your Enrollment No.</label>
+    <input type="text" id="roll">
+
+    <label>Semester</label>
+    <select>
+        <option>1</option>
+        <option>5</option>
+    </select>
+
+    <div class="captcha" id="captcha"></div>
+    <button onclick="generateCaptcha()">Refresh Captcha</button>
+
+    <label>Enter Captcha</label>
+    <input type="text" id="captchaInput">
+
+    <button onclick="checkResult()">View Result</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
