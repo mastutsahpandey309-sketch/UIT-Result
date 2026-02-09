@@ -1,0 +1,12 @@
+{
+  "0101ME231075": {
+    "name": "Utsah Pandey",
+    "sgpa": "6.8",
+    "grades": ["B", "B", "C", "B+", "B", "B+", "A", "B+", "B", "B"]
+  },
+  "0101ME231078": {
+    "name": "Vivek Pal",
+    "sgpa": "6.5",
+    "grades": ["B", "A", "C", "C", "B", "B+", "A", "B+", "B+", "B"]
+  }
+}
