@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Statement of Marks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <h2>University Institute of Technology, RGPV</h2>
+</div>
+
+<div class="container">
+    <h2>Statement of Marks – B.Tech</h2>
+
+    <table>
+        <tr><td>Name</td><td id="name"></td></tr>
+        <tr><td>Roll No</td><td id="rollno"></td></tr>
+        <tr><td>Branch</td><td>ME</td></tr>
+        <tr><td>Course</td><td>B.Tech</td></tr>
+        <tr><td>Semester</td><td>5</td></tr>
+        <tr><td>Status</td><td>Regular</td></tr>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Paper</th>
+                <th>Total Credit</th>
+                <th>Earned Credit</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody id="grades"></tbody>
+    </table>
+
+    <div class="result-box">
+        PASS | SGPA: <span id="sgpa"></span>
+    </div>
+
+    <button onclick="fakePrint()">Print Marksheet</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
