@@ -1,44 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Statement of Marks</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B.Tech Result</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="generateCaptcha()">
 
-<div class="header">
-    <h2>University Institute of Technology, RGPV</h2>
+<div class="banner">
+    <h1>B.TECH. RESULT</h1>
+    <p>Home › Result › B.Tech Result</p>
 </div>
 
 <div class="container">
-    <h2>Statement of Marks – B.Tech</h2>
+    <div id="errorBox" class="error-box"></div>
 
-    <table>
-        <tr><td>Name</td><td id="name"></td></tr>
-        <tr><td>Roll No</td><td id="rollno"></td></tr>
-        <tr><td>Branch</td><td>ME</td></tr>
-        <tr><td>Course</td><td>B.Tech</td></tr>
-        <tr><td>Semester</td><td>5</td></tr>
-        <tr><td>Status</td><td>Regular</td></tr>
-    </table>
+    <div class="form-box">
+        <label>Enter Your Enrollment No.</label>
+        <input type="text" id="roll">
 
-    <table>
-        <thead>
-            <tr>
-                <th>Paper</th>
-                <th>Total Credit</th>
-                <th>Earned Credit</th>
-                <th>Grade</th>
-            </tr>
-        </thead>
-        <tbody id="grades"></tbody>
-    </table>
+        <label>Semester</label>
+        <select id="semester">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
 
-    <div class="result-box">
-        PASS | SGPA: <span id="sgpa"></span>
+        <div class="captcha-box">
+            <canvas id="captchaCanvas"></canvas>
+            <button onclick="generateCaptcha()">↻</button>
+        </div>
+
+        <label>Please enter the text below</label>
+        <input type="text" id="captchaInput">
+
+        <button class="view-btn" onclick="validateResult()">View Result</button>
     </div>
-
-    <button onclick="fakePrint()">Print Marksheet</button>
 </div>
 
 <script src="script.js"></script>
