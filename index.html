@@ -1,37 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>B.Tech Result</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UIT RGPV - Result</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="header">
-    <h2>UNIVERSITY INSTITUTE OF TECHNOLOGY, RGPV</h2>
+<header class="top-header">
+    <div class="header-content">
+        <div class="logo">UIT</div>
+        <div>
+            <h2>UNIVERSITY INSTITUTE OF TECHNOLOGY, RGPV</h2>
+            <p>Constituent College of RGPV, NAAC 'A' graded Technological University</p>
+            <p>Narsingharh By pass Road Near Gandhi Nagar, Bhopal (M.P)</p>
+        </div>
+    </div>
+</header>
+
+<div class="banner">
+    <h1>RESULT</h1>
+    <p>Home › Result</p>
 </div>
 
 <div class="container">
-    <div id="notification"></div>
+    <div class="result-box">
+        <h3>Main Result</h3>
+        <div class="options">
+            <button onclick="goToResult()">B.E.</button>
+            <button onclick="goToResult()">M.C.A.</button>
+            <button onclick="goToResult()">M.E.</button>
+            <button onclick="goToResult()">M.Tech.</button>
+            <button onclick="goToResult()">B.Tech</button>
+            <button onclick="goToResult()">MCA 2 Year</button>
+        </div>
 
-    <h2>B.TECH RESULT</h2>
-
-    <label>Enter Your Enrollment No.</label>
-    <input type="text" id="roll">
-
-    <label>Semester</label>
-    <select>
-        <option>1</option>
-        <option>5</option>
-    </select>
-
-    <div class="captcha" id="captcha"></div>
-    <button onclick="generateCaptcha()">Refresh Captcha</button>
-
-    <label>Enter Captcha</label>
-    <input type="text" id="captchaInput">
-
-    <button onclick="checkResult()">View Result</button>
+        <h3>Revaluation Result</h3>
+        <div class="options">
+            <button onclick="goToResult()">B.E.</button>
+            <button onclick="goToResult()">M.C.A.</button>
+            <button onclick="goToResult()">M.E.</button>
+            <button onclick="goToResult()">M.Tech.</button>
+            <button onclick="goToResult()">B.Tech</button>
+            <button onclick="goToResult()">MCA 2 Year</button>
+        </div>
+    </div>
 </div>
+
+<footer class="footer">
+    <div>
+        <h4>Examination</h4>
+        <p>Result</p>
+        <p>Academic Calender</p>
+        <p>Exam Time Table</p>
+        <p>Schemes</p>
+    </div>
+    <div>
+        <h4>Other Links</h4>
+        <p>Photo Gallery</p>
+        <p>Bus Information</p>
+        <p>RTI</p>
+    </div>
+    <div>
+        <h4>Help & Support</h4>
+        <p>Technical Support: 8989205805</p>
+    </div>
+</footer>
 
 <script src="script.js"></script>
 </body>
