@@ -1,89 +1,103 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #f5f5f5;
+    background: #f2f2f2;
 }
 
-.header {
-    background: #ffffff;
+.top-header {
+    background: white;
     padding: 10px;
     text-align: center;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 3px solid #0c4f52;
+}
+
+.banner {
+    background: #0c4f52;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
 }
 
 .container {
-    width: 90%;
-    max-width: 800px;
-    margin: 30px auto;
+    padding: 20px;
+}
+
+.result-box {
     background: white;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 4px;
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
+.options button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
 }
 
-label {
-    display: block;
-    margin-top: 15px;
+.form-box {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
 }
 
 input, select {
     width: 100%;
     padding: 8px;
-    margin-top: 5px;
+    margin: 8px 0;
 }
 
-button {
-    margin-top: 15px;
-    padding: 10px;
-    background: #2e7d32;
+.view-btn {
+    background: #2c7a4b;
     color: white;
+    padding: 10px;
     border: none;
-    cursor: pointer;
+    width: 100%;
 }
 
-button:hover {
-    background: #1b5e20;
+.captcha-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
-.captcha {
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 5px;
-    margin: 10px 0;
-    background: #eee;
-    padding: 10px;
-    display: inline-block;
-}
-
-.notification {
-    background: #d32f2f;
-    color: white;
-    padding: 10px;
+.error-box {
+    color: red;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.result-container {
+    background: white;
+    margin: 20px;
+    padding: 20px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-table, th, td {
+td, th {
     border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
 }
 
-th, td {
+.print-btn {
+    margin-top: 15px;
     padding: 10px;
-    text-align: center;
+    background: #ccc;
+    border: none;
+    width: 100%;
 }
 
-.result-box {
-    margin-top: 20px;
-    text-align: center;
-    font-weight: bold;
+.footer {
+    background: #0c4f52;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 30px;
 }
