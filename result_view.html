@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Statement of Marks</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadResult()">
+
+<div class="result-container">
+    <h2>Statement of Marks - B.Tech</h2>
+    <p>Examination - December 2025</p>
+
+    <table class="info-table">
+        <tr><td>Name</td><td id="name"></td></tr>
+        <tr><td>Roll No</td><td id="rollDisplay"></td></tr>
+        <tr><td>Branch</td><td>ME</td></tr>
+        <tr><td>Course</td><td>B.Tech</td></tr>
+        <tr><td>Semester</td><td>5</td></tr>
+        <tr><td>Status</td><td>Regular</td></tr>
+    </table>
+
+    <table class="marks-table">
+        <thead>
+            <tr>
+                <th>Paper</th>
+                <th>Total Credit</th>
+                <th>Earned Credit</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody id="marksBody"></tbody>
+    </table>
+
+    <table class="summary-table">
+        <tr>
+            <th>Result</th>
+            <th>SGPA</th>
+            <th>CGPA</th>
+        </tr>
+        <tr>
+            <td>PASS</td>
+            <td id="sgpa"></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <button class="print-btn">Print Marksheet</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
